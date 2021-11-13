@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+
+    <TextView
+        android:id="@+id/texto_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Solo cuentas premium"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+
+    <CheckBox
+        android:id="@+id/opcion_reporte"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:enabled="false"
+        android:focusable="true"
+        android:text="Generar reporte mensual" />
+
+    <CheckBox
+        android:id="@+id/opcion_ajuste_local"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:enabled="false"
+        android:focusable="true"
+        android:text="Envío ajustado a zona de tiempo local" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Actualizar Cuenta"
+        android:id="@+id/boton_actualizar"
+        android:onClick="actualizarCuenta"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="16dp" />
+</LinearLayout>
